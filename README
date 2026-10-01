@@ -1,0 +1,85 @@
+# 🚀 Day 19 - Min Stack
+
+## 📌 Phase
+
+**Custom Data Structures**
+
+## 🎯 Problem Statement
+
+Build a **Min Stack** that stores temperature readings and can instantly return the **minimum recorded temperature**.
+
+The stack should support:
+
+* 📥 `push()` - Add temperature
+* 📤 `pop()` - Remove temperature
+* 🔍 `get_min()` - Get minimum temperature
+
+## 💡 Example
+
+```text
+Input:  [32, 28, 35, 25, 30, 22]
+
+Minimum: 22°C
+```
+
+After removing `22`:
+
+```text
+Minimum: 25°C
+```
+
+## 🧠 Approach
+
+The Min Stack uses **two stacks**:
+
+```text
+Main Stack       Min Stack
+    ↓                ↓
+   32               32
+   28               28
+   35
+   25               25
+   30
+   22               22
+```
+
+The **Min Stack** keeps track of the current minimum value.
+
+This allows us to find the minimum without scanning the entire stack.
+
+## ⚡ Complexity
+
+| Operation   | Complexity |
+| ----------- | ---------- |
+| `push()`    | O(1)       |
+| `pop()`     | O(1)       |
+| `get_min()` | O(1)       |
+
+**Space Complexity:** `O(n)`
+
+## 🌍 Real-World Applications
+
+* 🌡️ Temperature monitoring
+* 💰 Financial systems
+* ☁️ Cloud infrastructure
+* 📊 Monitoring systems
+* 🚨 Real-time alert systems
+
+## 🏆 Key Learning
+
+Through this challenge, I learned:
+
+* 📚 Custom data structures
+* 🥞 Stack implementation
+* ⚡ O(1) minimum lookup
+* 🔄 Managing multiple stacks
+* 📈 Time & space complexity
+
+## 📅 60 Days of DSA
+
+**Day 19 / 60** 🔥
+**Topic:** Custom Data Structures
+**Problem:** Min Stack
+**Language:** Python 🐍
+
+> 💡 **Key Concept:** Maintain the minimum value in O(1) time.
